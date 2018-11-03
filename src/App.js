@@ -10,7 +10,7 @@ const topics = _.keys(allTopics)
 
 function Button (props) {
   return (
-    <button className="button" {...props}>
+    <button className="hit-button" {...props}>
         {props.children}
     </button>
   )
