@@ -16,6 +16,9 @@ function Button (props) {
   )
 }
 
+function getKey () {
+  return (new Date()).getTime();
+}
 
 class App extends Component {
 
@@ -30,6 +33,7 @@ class App extends Component {
 
     const selectionObj = {
       type: 'question',
+      uniqueKey: getKey(),
       data: {
         title: chosenTopic,
         body: chosenQuestion
@@ -50,6 +54,7 @@ class App extends Component {
 
     const selectionObj = {
       type: 'question',
+      uniqueKey: getKey(),
       data: {
         title: `${emotionLevel1} → ${emotionLevel2} → ${emotionLevel3}`,
         body: ''
@@ -68,7 +73,7 @@ class App extends Component {
         <Button onClick={()=>this.getRandomFeeling()}>Feel Wheel</Button>
         <ul>
           {_.map(this.state.selections, (selection, idx) => (
-            <li key={selection.data.title + selection.data.body + idx}>
+            <li key={selection.uniqueKey}>
               <h2>{selection.data.title}</h2>
               <p>{selection.data.body}</p>
             </li>
