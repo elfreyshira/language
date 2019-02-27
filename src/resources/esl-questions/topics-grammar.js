@@ -1,5 +1,5 @@
 export default {
-    "-ed / -ing Adjectives": [
+    "-ed / -ing Adjectives (grammar)": [
         "What depressing news have you heard or read about recently?",
         "When was the last time you were very disappointed?",
         "What’s the most disgusting food you’ve ever tasted?",
@@ -11,7 +11,7 @@ export default {
         "Have you seen a really horrifying movie?",
         "What do you get frustrated about?"
     ],
-    "Articles": [
+    "Articles (grammar)": [
         "What do you think about the English articles ‘a’, ‘an’ and ‘the’?",
         "Do you have articles in your own language?",
         "What do you think when your teacher says you’ll do a lesson on articles?",
@@ -33,7 +33,7 @@ export default {
         "Why is it “Once upon a time” but “The end”? How would “An end” or “Once upon the time” change things?",
         "Did you like this discussion on articles?"
     ],
-    "Comparatives": [
+    "Comparatives (grammar)": [
         "Which is more difficult to learn, English or your language?",
         "What things are you better at than your best friend?",
         "Are people today luckier than they were 50 years ago?",
@@ -55,7 +55,7 @@ export default {
         "Are you smarter than your parents? In what way(s)?",
         "What would you like to be better at than anyone else in the world? Why?"
     ],
-    "Do You Ever...?": [
+    "Do You Ever...? (grammar)": [
         "Do you ever wonder what life is all about?",
         "Do you ever type LOL (laugh out loud) when really you aren’t laughing?",
         "Do you ever think you have too many things to finish on time?",
@@ -77,7 +77,7 @@ export default {
         "Do you ever think you friends don’t like you?",
         "Do you ever think you’re the happiest person in the world?"
     ],
-    "First Conditional": [
+    "First Conditional (grammar)": [
         "What will you do if you miss your family & friends?",
         "What will you do if you have problems with the English language?",
         "What will you do if you can't stand the heat?",
@@ -99,7 +99,7 @@ export default {
         "What will you do if you it rains at the weekend?",
         "What will you do if you run out of food in your house?"
     ],
-    "Going To": [
+    "Going To (grammar)": [
         "What are you going to do with your life?",
         "What are you going to do after this class?",
         "Where are you going to go for your next holiday?",
@@ -121,7 +121,7 @@ export default {
         "When are you going to stop studying English?",
         "Are you going to live happily ever after?"
     ],
-    "Have You Ever...?": [
+    "Have You Ever...? (grammar)": [
         "Have you ever lost some money?",
         "Have you ever broken a bone?",
         "Have you ever been on a really exciting holiday in another country?",
@@ -143,7 +143,7 @@ export default {
         "Have you ever met anyone famous?",
         "Have you ever lent someone something and they didn’t give it back?"
     ],
-    "How Often...?": [
+    "How Often...? (grammar)": [
         "How often do you study English? How often should you study?",
         "How often are you in trouble with someone? Who and why?",
         "How often do you feel on top of the world? Is it a good feeling?",
@@ -165,7 +165,7 @@ export default {
         "How often will you study English in the future?",
         "How often did you cry when you were younger? What were the main reasons?"
     ],
-    "Prefer...": [
+    "Prefer... (grammar)": [
         "Do you prefer studying English using books or Internet resources?",
         "When do you prefer to study, in the morning, afternoon or evening?",
         "Do your teachers ever ask you what you prefer doing?",
@@ -187,7 +187,7 @@ export default {
         "Would you prefer to have more, less or no homework?",
         "What would you prefer to do instead of having this discussion?"
     ],
-    "Present Perfect": [
+    "Present Perfect (grammar)": [
         "What do you know about the present perfect in English?",
         "What are the different functions of the present perfect?",
         "If a student wanted you to explain the present perfect to them, what would you tell them?",
@@ -209,7 +209,7 @@ export default {
         "What three adjectives would you use to describe the present perfect? Why these three adjectives?",
         "What’s the difference between the present perfect and the perfect present?"
     ],
-    "Present Simple": [
+    "Present Simple (grammar)": [
         "What do you know about the present simple in English?",
         "What are the different functions of the present simple?",
         "If a student wanted you to explain the present simple to them, what would you tell them?",
@@ -231,7 +231,7 @@ export default {
         "What three adjectives would you use to describe the present simple? Why these three adjectives?",
         "What’s the difference between the present simple and a simple present?"
     ],
-    "Put & Take": [
+    "Put & Take (grammar)": [
         "When was the last time you took something apart? What was it and how old were you?",
         "When did you last have to take back something you had said?",
         "Have you ever taken something back to a shop? What was it and why?",
@@ -253,7 +253,7 @@ export default {
         "Have you ever put on a play / show / concert or know anyone who has?",
         "When was the last time you put someone on? Did they find it funny?"
     ],
-    "Second Conditional": [
+    "Second Conditional (grammar)": [
         "If you could be anyone in the world, who would you be?",
         "If you were an animal, what animal would you be?",
         "If you went back in time, what year would you go to?",
@@ -275,7 +275,7 @@ export default {
         "If you were the world’s best at something, what would you like to be best at?",
         "If you were a colour, what colour would you be and why?"
     ],
-    "Superlatives": [
+    "Superlatives (grammar)": [
         "Who is the best?",
         "What’s the most disgusting food you’ve ever eaten?",
         "When was the happiest period of your life?",
@@ -297,7 +297,7 @@ export default {
         "Do you like having the latest things and knowing the latest news?",
         "What’s the earliest you could get up every morning?"
     ],
-    "What's It Like...?": [
+    "What's It Like...? (grammar)": [
         "What’s it like being you?",
         "What’s it like in your idea of paradise?",
         "What’s it like being your age?",
@@ -319,7 +319,7 @@ export default {
         "What’s it like in the world you’d like to live in?",
         "What’s it like living in your town?"
     ],
-    "What's Your Favourite...?": [
+    "What's Your Favourite...? (grammar)": [
         "What’s your favourite time of the day (and why)?",
         "Where’s your favourite place to study (and why)?",
         "Who’s your favourite and least favourite actor (and why)?",
@@ -341,7 +341,7 @@ export default {
         "What’s your favourite and least favourite time of the year (and why)?",
         "Who is your favourite person in the whole wide world?"
     ],
-    "When Did You First...?": [
+    "When Did You First...? (grammar)": [
         "When did you first use the Internet? How was it?",
         "When did you first go to the cinema? What did you see?",
         "When did you first use a mobile phone? Who did you call?",
@@ -363,7 +363,7 @@ export default {
         "When did you first regret doing something? Do you still regret it?",
         "When did you first remember feeling real pain? What happened?"
     ],
-    "When Did You Last...?": [
+    "When Did You Last...? (grammar)": [
         "When did you last you say no?",
         "When did you last you hurt yourself?",
         "When did you last you think to yourself, ‘never again’?",
@@ -385,7 +385,7 @@ export default {
         "When did you last change your plans for your life?",
         "When did you last get lost?"
     ],
-    "When Was The First Time...?": [
+    "When Was The First Time...? (grammar)": [
         "When was the first time you used the Internet? How was it?",
         "When was the first time you went to the cinema? What did you see?",
         "When was the first time you used a mobile phone? Who did you call?",
@@ -407,7 +407,7 @@ export default {
         "When was the first time you regretted doing something? Do you still regret it?",
         "When was the first time you remember feeling real pain? What happened?"
     ],
-    "When Was The Last Time...?": [
+    "When Was The Last Time...? (grammar)": [
         "When was the last time you said no?",
         "When was the last time you hurt yourself?",
         "When was the last time you thought to yourself, ‘never again’?",
@@ -429,7 +429,7 @@ export default {
         "When was the last time you changed your plans for your life?",
         "When was the last time you were lost?"
     ],
-    "Will You Ever...?": [
+    "Will You Ever...? (grammar)": [
         "Will you ever be happy with your level of English?",
         "Will you ever earn the amount of money you’d like to?",
         "Will you ever find true happiness?",
@@ -451,7 +451,7 @@ export default {
         "Will you ever again have the same hair styles you had when you were younger?",
         "Will we ever stop watching rubbish on television?"
     ],
-    "Would You Ever...?": [
+    "Would You Ever...? (grammar)": [
         "Would you ever stop studying English?",
         "Would you ever change your religion or take up a religion?",
         "Would you ever marry for money?",

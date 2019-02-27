@@ -2,11 +2,6 @@
 
 javascript:(function(){var hi=[];document.querySelectorAll('td[width="93%"]').forEach(lol=>hi.push(lol.innerText));localStorage[document.querySelector('h1 a').innerText.split('\n')[1].trim()] = JSON.stringify(hi);}())
 
-var hi=[];
-document.querySelectorAll('td[width="93%"]').forEach(lol=>hi.push(lol.innerText));
-localStorage[document.querySelector('h1 a').innerText.split('\n')[1].trim()] = JSON.stringify(hi);
-
-
 
 https://raw.githubusercontent.com/lodash/lodash/4.17.11-npm/core.min.js
 
