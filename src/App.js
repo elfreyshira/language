@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
-import _ from 'lodash';
+import React, { Component } from 'react'
+import _ from 'lodash'
 
-import allTopics from './resources/esl-questions/all-topics';
-import emotions from './resources/wheel-of-emotions/emotions';
+import allTopics from './resources/esl-questions/all-topics'
+import emotions from './resources/wheel-of-emotions/emotions'
 
-import './App.css';
+import './App.css'
 
 const topics = _.keys(allTopics)
 const isAdminMode =  window.location.search.match("mode=admin")
@@ -18,40 +18,40 @@ function Button (props) {
 }
 
 function getKey () {
-  return (new Date()).getTime();
+  return (new Date()).getTime()
 }
 
 
 function openWindowWithPost(url, data, target) {
-  const form = document.createElement("form");
-  form.target = target;
-  form.method = "POST";
-  form.action = url;
-  form.style.display = "none";
+  const form = document.createElement("form")
+  form.target = target
+  form.method = "POST"
+  form.action = url
+  form.style.display = "none"
 
   for (let key in data) {
-    const input = document.createElement("input");
-    input.type = "hidden";
-    input.name = key;
-    input.value = data[key];
-    form.appendChild(input);
+    const input = document.createElement("input")
+    input.type = "hidden"
+    input.name = key
+    input.value = data[key]
+    form.appendChild(input)
   }
 
-  document.body.appendChild(form);
-  form.submit();
-  document.body.removeChild(form);
+  document.body.appendChild(form)
+  form.submit()
+  document.body.removeChild(form)
 }
 
 if (isAdminMode) {
   document.addEventListener('keydown', function(keyObj){
     if (keyObj.key === '/') {
-      var inputElement = document.getElementById('wordsearch');
+      var inputElement = document.getElementById('wordsearch')
       window.setTimeout(function() {
-        inputElement.focus();
-        inputElement.select();
-      }, 50);
+        inputElement.focus()
+        inputElement.select()
+      }, 50)
     }
-  }, false);
+  }, false)
 }
 
 
@@ -103,7 +103,7 @@ const websiteMapping = {
 class App extends Component {
 
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       selections: [],
       searchValue: '',
@@ -188,7 +188,7 @@ class App extends Component {
 
 
         </div>
-        <Button type="submit" onClick={(evt)=>{this.searchForWord(evt); this.searchForWord(evt);}}>
+        <Button type="submit" onClick={(evt)=>{this.searchForWord(evt)}}>
           Search Word
         </Button>
       </form>
@@ -212,8 +212,8 @@ class App extends Component {
           ))}
         </ul>
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App
