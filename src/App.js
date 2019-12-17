@@ -118,8 +118,41 @@ class App extends Component {
     window.open('https://jagokata.com/kata-bijak/kata-' + searchValue.split(' ').join('+') + '.html', 'jagokata')
     openWindowWithPost('http://www.sinonimkata.com/search.php', {q: searchValue})
     window.open('https://id.oxforddictionaries.com/translate/indonesian-english/' + searchValue.split(' ').join('_'), 'oxford')
+    
+    window.open('https://alkitab.sabda.org/search.php?scope=all&exact=off&search=' + searchValue.split(' ').join('+'), 'alkitab')
+    window.open('https://kitabsuci.mobi/kitabsuci/search/' + searchValue.split(' ').join('+'), 'kitabsuci')
+
+    window.open('https://kitabgaul.com/word/' + searchValue.split(' ').join('-'), 'kitabgaul')
+    window.open('https://twitter.com/search?q=' + encodeURIComponent(searchValue + ' lang:id'), 'twitter')
+    
+    window.open('https://search.kompas.com/search/?q=' + searchValue.split(' ').join('+'), 'kompas')
+    window.open('http://bahasa.cs.ui.ac.id/kbbi/kbbi.php?keyword=' + searchValue.split(' ').join('+') + '&varbidang=all&vardialek=all&varragam=all&varkelas=all&submit=tabel', 'kbbi-ui')
 
     evt.preventDefault()
+  }
+
+  renderWordSearch () {
+    return (
+      <form>
+        <input
+          id="wordsearch"
+          type="text"
+          value={this.state.searchValue}
+          onChange={(evt)=>this.setState({searchValue: evt.target.value})}
+        />
+        <div>
+          <label>
+            <input
+              type="checkbox"
+            />
+            Search multiple verb spellings
+          </label>
+        </div>
+        <Button type="submit" onClick={(evt)=>{this.searchForWord(evt); this.searchForWord(evt);}}>
+          Search Word
+        </Button>
+      </form>
+    )
   }
 
   render() {
@@ -128,17 +161,7 @@ class App extends Component {
         <Button onClick={()=>this.getRandomQuestion()}>Discussion Question</Button>
         <Button onClick={()=>this.getRandomFeeling()}>Feel Wheel</Button>
         
-        {!isAdminMode ? null :
-          <form>
-            <input
-              id="wordsearch"
-              type="text"
-              value={this.state.searchValue}
-              onChange={(evt)=>this.setState({searchValue: evt.target.value})}
-            />
-            <Button type="submit" onClick={(evt)=>{this.searchForWord(evt); this.searchForWord(evt);}}>Search Word</Button>
-          </form>
-        }
+        {!isAdminMode ? null : this.renderWordSearch()}
 
         <ul>
           {_.map(this.state.selections, (selection, idx) => (
