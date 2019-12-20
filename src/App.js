@@ -92,12 +92,11 @@ const websiteMapping = {
   kitabsuci: (searchValue) => window.open('https://kitabsuci.mobi/kitabsuci/search/' + searchValue.split(' ').join('+'), 'kitabsuci'),
 
   kitabgaul: (searchValue) => window.open('https://kitabgaul.com/word/' + searchValue.split(' ').join('-'), 'kitabgaul'),
-  twitter: (searchValue) => window.open('https://twitter.com/search?q=' + encodeURIComponent(searchValue + ' lang:id'), 'twitter'),
+  twitter: (searchValue) => window.open('https://twitter.com/search?q=' + encodeURIComponent(searchValue + ' ((min_replies:1 min_faves:1 min_retweets:1) OR (min_replies:10 OR min_faves:10 OR min_retweets:10)) lang:id'), 'twitter'),
 
   kompas: (searchValue) => window.open('https://search.kompas.com/search/?q=' + searchValue.split(' ').join('+'), 'kompas'),
   kbbiui: (searchValue) => window.open('http://bahasa.cs.ui.ac.id/kbbi/kbbi.php?keyword=' + searchValue.split(' ').join('+') + '&varbidang=all&vardialek=all&varragam=all&varkelas=all&submit=tabel', 'kbbiui'),
   }
-
 
 
 class App extends Component {
